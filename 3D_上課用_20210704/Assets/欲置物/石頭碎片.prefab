@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1 &2723281701724709297
+--- !u!1 &6647565643721211256
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -8,47 +8,48 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 2723281701724445509}
-  - component: {fileID: 2723281701725698163}
-  - component: {fileID: 2723281701726778859}
-  - component: {fileID: 1407772536831086264}
-  - component: {fileID: 6647865878168492649}
+  - component: {fileID: 6647565643720935308}
+  - component: {fileID: 6647565643722187962}
+  - component: {fileID: 6647565643723204898}
+  - component: {fileID: 7638815618272498289}
+  - component: {fileID: 899870701676089444}
+  - component: {fileID: -4308514382415949845}
   m_Layer: 8
-  m_Name: "\u77F3\u982D"
+  m_Name: "\u77F3\u982D\u788E\u7247"
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &2723281701724445509
+--- !u!4 &6647565643720935308
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2723281701724709297}
+  m_GameObject: {fileID: 6647565643721211256}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.3, y: 0.3, z: 0.3}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!33 &2723281701725698163
+--- !u!33 &6647565643722187962
 MeshFilter:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2723281701724709297}
+  m_GameObject: {fileID: 6647565643721211256}
   m_Mesh: {fileID: 4300208, guid: 353b40c6a1ff7dd469b9d1e4dc0f13a8, type: 3}
---- !u!23 &2723281701726778859
+--- !u!23 &6647565643723204898
 MeshRenderer:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2723281701724709297}
+  m_GameObject: {fileID: 6647565643721211256}
   m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
@@ -81,31 +82,44 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
---- !u!65 &1407772536831086264
+--- !u!65 &7638815618272498289
 BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2723281701724709297}
+  m_GameObject: {fileID: 6647565643721211256}
   m_Material: {fileID: 13400000, guid: db848717a873b8b41a7f17587df00e79, type: 2}
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 1.0000017, y: 0.8, z: 1.0000018}
   m_Center: {x: -0.000001758337, y: -0.39999995, z: -0.0000004172325}
---- !u!114 &6647865878168492649
-MonoBehaviour:
+--- !u!54 &899870701676089444
+Rigidbody:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2723281701724709297}
+  m_GameObject: {fileID: 6647565643721211256}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 1
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 10
+  m_CollisionDetection: 0
+--- !u!75 &-4308514382415949845
+ConstantForce:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6647565643721211256}
   m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2d2160b564fd3164d9102021aaa1d7d4, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  data: {fileID: 11400000, guid: d80f95aa763b47147ae43717a55ac345, type: 2}
-  objExplosion: {fileID: 7962669097145538855, guid: 62d0b677fd4b3c946bcc7a26b2761884,
-    type: 3}
+  m_Force: {x: 0, y: 0, z: 0}
+  m_RelativeForce: {x: 0, y: 0, z: 0}
+  m_Torque: {x: 0, y: 5, z: 0}
+  m_RelativeTorque: {x: 0, y: 0, z: 0}
